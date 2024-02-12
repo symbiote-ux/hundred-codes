@@ -6,7 +6,7 @@ const decimalToBinary = (decimal) => {
     binary[i++] = rem;
     decimal = Math.floor(decimal / 2);
   }
-  return binary;
+  return binary.reverse();
 };
 
-console.log(decimalToBinary(7).join(""));
+console.log(decimalToBinary(8).join(""));
